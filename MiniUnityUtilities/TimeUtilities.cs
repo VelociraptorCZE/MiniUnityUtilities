@@ -1,6 +1,6 @@
 ﻿/**
  * MiniUnityUtilities
- * Copyright (c) Simon Raichl 2019
+ * Copyright (c) Simon Raichl 2019 - 2020
  * MIT License
  */
 
@@ -16,5 +16,10 @@ public static class TimeUtilities
     public static void UnfreezeTime()
     {
         Time.timeScale = 1;
+    }
+
+    public static bool IsTimeFrozen()
+    {
+        return Time.timeScale == 0;
     }
 }
